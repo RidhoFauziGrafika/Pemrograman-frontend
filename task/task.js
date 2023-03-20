@@ -63,8 +63,12 @@ const store = (user) => {
  * Note: Ubah function menggunakan arrow function.
  */
 const update = (index, user) => {
-  users[index] = user;
-  all();
+  if(users[index]){
+      users[index] = user
+      all()
+  }else {
+      console.log("Data Tidak Ditemukan");
+  }
 }
 
 /**
@@ -74,8 +78,12 @@ const update = (index, user) => {
  * Note: Ubah function menggunakan arrow function.
  */
 const destroy = (index) => {
-  users.splice(index, 1);
-  all();
+  if(users[index]){
+    users.splice(index, 1);
+    all();
+  }else {
+    console.log("Data Tidak Ditemukan");
+  }
 }
 
 /**
