@@ -1,0 +1,94 @@
+/* small scree */
+
+.container {
+    margin: 1rem;
+}
+
+.addMovie{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.addMovie__left{
+    margin-bottom: 1rem;
+}
+
+.addMovie__image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.addMovie__title{
+    color: #4361ee;
+    margin-bottom: 1rem;
+    font-size: 2.44rem;
+}
+
+.addMovieForm__labelTitle, .addMovieForm__labelYear{
+    color: #64748b;
+    text-align: left;
+    display: block;
+}
+
+.addMovieForm__formTitle, .addMovieForm__formYear{
+    width: 100%;
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4361ee;
+}
+
+.addMovieForm__button{
+    width: 100%;
+    border: none;
+    background-color: #4361ee;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* medium screen */
+@media (min-width: 768px){
+    .addMovieForm__labelTitle, .addMovieForm__labelYear{
+        margin-left: 12%;
+    }
+    
+    .addMovieForm__formTitle, .addMovieForm__formYear, .addMovieForm__button{
+        width: 75%;
+    }
+}
+
+/* large screen */
+@media (min-width: 992px){
+    .container {
+        max-width: 1200px;
+        margin: 3rem auto;
+    }
+
+    .addMovie{
+        margin: 0 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .addMovie__left{
+        flex-basis: 70%;
+    }
+
+    .addMovieForm__labelTitle, .addMovieForm__labelYear{
+        margin:0 ;
+    }
+
+    .addMovieForm__formTitle, .addMovieForm__formYear, .addMovieForm__button{
+        width: 100%;
+    }
+}
