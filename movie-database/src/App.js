@@ -5,19 +5,25 @@ import Popular from "./pages/movie/Popular";
 import NowPlaying from "./pages/movie/NowPlaying";
 import TopRated from "./pages/movie/TopRated";
 import Layout from "./Layout";
+import { ThemeProvider } from "styled-components";
+import theme from "./utils/constants/theme";
+import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
   return (
     <div>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/movie/create" element={<CreateMovie />} />
-          <Route path="/movie/popular" element={<Popular />} />
-          <Route path="/movie/now-playing" element={<NowPlaying />} />
-          <Route path="/movie/top-rated" element={<TopRated />} />
-        </Routes>
-      </Layout>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/movie/create" element={<CreateMovie />} />
+            <Route path="/movie/popular" element={<Popular />} />
+            <Route path="/movie/now-playing" element={<NowPlaying />} />
+            <Route path="/movie/top-rated" element={<TopRated />} />
+          </Routes>
+        </Layout>
+      </ThemeProvider>
     </div>
   );
 }

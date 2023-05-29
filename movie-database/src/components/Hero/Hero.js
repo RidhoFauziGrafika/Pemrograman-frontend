@@ -1,6 +1,7 @@
 import { useState } from "react";
-import styles from "./Hero.module.css";
 import { useEffect } from "react";
+import Button from "../ui/Button";
+import StyledHero from "./Hero.styled";
 
 function Hero() {
   // membuat state movie
@@ -17,28 +18,28 @@ function Hero() {
     fetchMovie();
   }, []);
   return (
-    <div className={styles.container}>
-      <section className={styles.hero}>
-        <div className={styles.hero__left}>
-          <h2 className={styles.hero__title}>{movie.Title}</h2>
-          <h3 className={styles.hero__genre}>Genre : {movie.Genre}</h3>
-          <p className={styles.hero__description}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            et nostrum voluptas, beatae recusandae officia temporibus est iusto
-            incidunt ratione dolore in, vero eos nobis! Quia eveniet ducimus
-            sequi reprehenderit!
-          </p>
-          <button className={styles.hero__button}>Watch</button>
-        </div>
-        <div className={styles.hero__right}>
-          <img
-            className={styles.hero__image}
-            src={movie.Poster}
-            alt={movie.Title}
-          />
-        </div>
-      </section>
-    </div>
+    <StyledHero>
+      <div>
+        <section>
+          <div className="hero__left">
+            <h2>{movie.Title}</h2>
+            <h3>Genre : {movie.Genre}</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur et nostrum voluptas, beatae recusandae officia
+              temporibus est iusto incidunt ratione dolore in, vero eos nobis!
+              Quia eveniet ducimus sequi reprehenderit!
+            </p>
+            <Button variant="primary" size="md">
+              Watch
+            </Button>
+          </div>
+          <div className="hero__right">
+            <img src={movie.Poster} alt={movie.Title} />
+          </div>
+        </section>
+      </div>
+    </StyledHero>
   );
 }
 

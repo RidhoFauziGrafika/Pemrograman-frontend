@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./AddMovieForm.module.css";
 import { nanoid } from "nanoid";
 import Alert from "../Alert/Alert";
+import Button from "../ui/Button";
 
 function AddMovieForm(props) {
   //  destructing props: state movies
@@ -136,7 +137,9 @@ function AddMovieForm(props) {
                   </select>
                   {<Alert>{errors.typeMovie}</Alert>}
                 </div>
-                <button className={styles.addMovieForm__button}>Submit</button>
+                <Button variant="primary" full size="md">
+                  Add Movie
+                </Button>
               </div>
             </div>
           </div>

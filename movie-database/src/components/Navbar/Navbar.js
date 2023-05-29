@@ -1,44 +1,46 @@
+import StyledNavbar from "./Navbar.styled";
 import { Link } from "react-router-dom";
-import styles from "./Navbar.module.css";
 
 function Navbar() {
   return (
-    <div className={styles.container}>
-      <nav className={styles.navbar}>
-        <div>
-          <h1 className={styles.navbar__brand}>Movie App</h1>
-        </div>
-        <div>
-          <ul className={styles.navbar__list}>
-            <li className={styles.navbar__item}>
-              <Link to="/" className={styles.navbar__link}>
-                Home
-              </Link>
-            </li>
-            <li className={styles.navbar__item}>
-              <Link to="/movie/create" className={styles.navbar__link}>
-                Add Movie
-              </Link>
-            </li>
-            <li className={styles.navbar__item}>
-              <Link to="/movie/popular" className={styles.navbar__link}>
-                Popular
-              </Link>
-            </li>
-            <li className={styles.navbar__item}>
-              <Link to="/movie/now-playing" className={styles.navbar__link}>
-                Now Playing
-              </Link>
-            </li>
-            <li className={styles.navbar__item}>
-              <Link to="/movie/top-rated" className={styles.navbar__link}>
-                Top Rated
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <StyledNavbar>
+      <div>
+        <nav>
+          <div>
+            <h1>Movie App</h1>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <Link to="/" className="navbar__link">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/movie/create" className="navbar__link">
+                  Add Movie
+                </Link>
+              </li>
+              <li>
+                <Link to="/movie/popular" className="navbar__link">
+                  Popular
+                </Link>
+              </li>
+              <li>
+                <Link to="/movie/now-playing" className="navbar__link">
+                  Now Playing
+                </Link>
+              </li>
+              <li>
+                <Link to="/movie/top-rated" className="navbar__link">
+                  Top Rated
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </StyledNavbar>
   );
 }
 
