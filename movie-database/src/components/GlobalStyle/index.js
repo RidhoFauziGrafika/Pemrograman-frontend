@@ -24,6 +24,9 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+}
 
 `;
 

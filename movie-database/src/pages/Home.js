@@ -7,10 +7,11 @@ import Counter from "../components/Counter";
 
 function Home() {
   const [movies, setMovies] = useState(data);
+
   return (
     <div>
       <Hero />
-      <Movies movies={movies} setMovies={setMovies} />
+      <Movies movies={movies} setMovies={setMovies} title="Latest Movies" />
       <AddMovieForm movies={movies} setMovies={setMovies} />
     </div>
   );
