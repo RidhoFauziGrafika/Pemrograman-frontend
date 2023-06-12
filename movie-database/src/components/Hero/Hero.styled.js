@@ -26,7 +26,7 @@ const StyledHero = styled.div`
   }
 
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 25px;
     margin-top: 1rem;
@@ -51,7 +51,7 @@ const StyledHero = styled.div`
     }
 
     .hero__right {
-      flex-basis: 30%;
+      flex-basis: 50%;
     }
   }
 `;
