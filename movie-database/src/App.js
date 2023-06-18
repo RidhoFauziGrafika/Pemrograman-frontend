@@ -9,6 +9,8 @@ import { ThemeProvider } from "styled-components";
 import theme from "./utils/constants/theme";
 import GlobalStyle from "./components/GlobalStyle";
 import Detail from "./pages/movie/Detail";
+import data from "./utils/constants/data";
+import { useState } from "react";
 
 function App() {
   return (
