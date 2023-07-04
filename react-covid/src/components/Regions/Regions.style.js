@@ -11,27 +11,22 @@ const StyledRegions = styled.div`
   gap: 1rem;
 
   .card__titleCountry {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
   }
 
-  .card__titleStatus {
-    font-size: 1rem;
-    color: #64748b;
-  }
-
   .card__textConfirm {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #118ab2;
   }
 
   .card__textRecovered {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #06d6a0;
   }
 
   .card__textDead {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #ef476f;
   }
 

@@ -10,7 +10,6 @@ const StyledRegion = styled.div`
   section {
     display: flex;
     flex-direction: column;
-
     gap: 2rem;
   }
 
@@ -20,15 +19,11 @@ const StyledRegion = styled.div`
     gap: 1rem;
   }
 
-  h2 {
-    font-size: 2.44rem;
-    color: #06d6a0;
+  .headingTitle {
     text-align: center;
   }
 
   .regions__subTitle {
-    font-size: 1rem;
-    color: #64748b;
     text-align: center;
   }
 

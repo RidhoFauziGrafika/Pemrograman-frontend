@@ -4,9 +4,21 @@ import Alert from "../Alert";
 import img from "../../asset/img/undraw_conceptual_idea_xw7k.png";
 import Button from "../ui/Button";
 import StyledCovidForm from "./Covidform.style";
+import { useDispatch, useSelector } from "react-redux";
+import { updateCovid } from "../../features/moviesSlice";
+import { useNavigate } from "react-router-dom";
+import Input from "../ui/Input";
+import Select from "../ui/Select";
+import Heading from "../ui/Heading";
 
-function CovidForm(props) {
-  const { covid, setCovid } = props;
+function CovidForm() {
+  const covid = useSelector((store) => store.covid.covid);
+
+  // membuat dispatch
+  const dispatch = useDispatch();
+
+  // membuat navigate
+  const navigation = useNavigate();
 
   // membuat state object
   const [formData, setFormData] = useState({
@@ -47,22 +59,8 @@ function CovidForm(props) {
   }
 
   function updateProvinceCovid() {
-    // mencari index dan provinsi yang ingin diupdate
-    const index = covid.provinces.findIndex((item) => item.kota === province);
-    const foundProvince = covid.provinces.find(
-      (item) => item.kota === province
-    );
-
-    // akses provinsi (array) yang ingin diupdate menggunakan index
-    covid.provinces[index] = {
-      // lakukan spread : copy provinsi yang sudah ditemukan sebelumnya
-      ...foundProvince,
-      // update property berdasarkan nilai dari status : teknik computed property
-      [status]: parseInt(foundProvince[status]) + parseInt(jumlah),
-    };
-
-    // update state: spread operator
-    setCovid({ ...covid, provinces: [...covid.provinces] });
+    dispatch(updateCovid(formData));
+    navigation("/covid/provinsi");
   }
 
   function handleSubmit(e) {
@@ -78,13 +76,13 @@ function CovidForm(props) {
           <img src={img} alt="placeholder" />
         </div>
         <form onSubmit={handleSubmit}>
-          <h2>Form Covid</h2>
+          <Heading>Form Covid</Heading>
           <div>
             <div>
               <div>
                 <div>
                   <label>Provinsi</label>
-                  <select
+                  <Select
                     value={province}
                     name="province"
                     onChange={handleChange}
@@ -96,22 +94,22 @@ function CovidForm(props) {
                         </option>
                       );
                     })}
-                  </select>
+                  </Select>
                   {<Alert>{errors.province}</Alert>}
                 </div>
                 <div>
                   <label>Status</label>
-                  <select value={status} name="status" onChange={handleChange}>
+                  <Select value={status} name="status" onChange={handleChange}>
                     <option value="kasus">Kasus</option>
                     <option value="sembuh">Sembuh</option>
                     <option value="dirawat">Dirawat</option>
                     <option value="meninggal">Meninggal</option>
-                  </select>
+                  </Select>
                   {<Alert>{errors.status}</Alert>}
                 </div>
                 <div>
                   <label>Jumlah</label>
-                  <input
+                  <Input
                     type="number"
                     value={jumlah}
                     name="jumlah"

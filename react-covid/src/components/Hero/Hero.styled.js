@@ -4,21 +4,10 @@ const StyledHero = styled.div`
   padding: 1rem;
   text-align: center;
 
-  h2 {
-    color: #06d7a0;
-    margin-bottom: 1rem;
-    font-size: 2.44rem;
-  }
-
   h3 {
     color: #118ab2;
     margin-bottom: 1rem;
     font-size: 1.59rem;
-  }
-
-  p {
-    color: #64748b;
-    margin-bottom: 1rem;
   }
 
   img {

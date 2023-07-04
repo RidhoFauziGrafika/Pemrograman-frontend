@@ -10,17 +10,6 @@ const StyledProvinces = styled.div`
     text-align: center;
   }
 
-  h2 {
-    font-size: 2.44rem;
-    color: #06d6a0;
-  }
-
-  p {
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    color: #118ab2;
-  }
-
   .table__container {
     align-items: center;
     justify-content: center;

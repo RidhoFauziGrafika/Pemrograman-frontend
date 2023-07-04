@@ -21,16 +21,6 @@ const StyledGlobal = styled.div`
     gap: 1rem;
   }
 
-  h2 {
-    font-size: 2.44rem;
-    color: #06d6a0;
-  }
-
-  p {
-    font-size: 1rem;
-    color: #64748b;
-  }
-
   .card__container {
     width: 100%;
     padding: 0 2rem;

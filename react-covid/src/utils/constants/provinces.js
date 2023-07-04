@@ -3,7 +3,6 @@ const data = {
   total_province: 34,
   provinces: [
     {
-      id: 1,
       kota: "Jakarta",
       kasus: 0,
       sembuh: 0,
@@ -11,7 +10,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 2,
       kota: "Jawa Barat",
       kasus: 0,
       sembuh: 0,
@@ -19,7 +17,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 3,
       kota: "Jawa Tengah",
       kasus: 0,
       sembuh: 0,
@@ -27,7 +24,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 4,
       kota: "Jawa Timur",
       kasus: 0,
       sembuh: 0,
@@ -35,7 +31,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 5,
       kota: "Banten",
       kasus: 0,
       sembuh: 0,
@@ -43,7 +38,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 6,
       kota: "Yogyakarta",
       kasus: 0,
       sembuh: 0,
@@ -51,7 +45,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 7,
       kota: "Kalimantan Timur",
       kasus: 0,
       sembuh: 0,
@@ -59,7 +52,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 8,
       kota: "Bali",
       kasus: 0,
       sembuh: 0,
@@ -67,7 +59,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 9,
       kota: "Sumatera Utara",
       kasus: 0,
       sembuh: 0,
@@ -75,7 +66,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 10,
       kota: "Riau",
       kasus: 0,
       sembuh: 0,
@@ -83,7 +73,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 11,
       kota: "Sulawesi Selatan",
       kasus: 0,
       sembuh: 0,
@@ -91,7 +80,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 12,
       kota: "Sumatera Barat",
       kasus: 0,
       sembuh: 0,
@@ -99,7 +87,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 13,
       kota: "Nusa Tenggara Timur",
       kasus: 0,
       sembuh: 0,
@@ -107,7 +94,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 14,
       kota: "Kalimantan Selatan",
       kasus: 0,
       sembuh: 0,
@@ -115,7 +101,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 15,
       kota: "Sumatera Selatan",
       kasus: 0,
       sembuh: 0,
@@ -123,7 +108,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 16,
       kota: "Lampung",
       kasus: 0,
       sembuh: 0,
@@ -131,7 +115,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 17,
       kota: "Kepulauan Riau",
       kasus: 0,
       sembuh: 0,
@@ -139,7 +122,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 18,
       kota: "Bangka Belitung",
       kasus: 0,
       sembuh: 0,
@@ -147,7 +129,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 19,
       kota: "Kalimantan Barat",
       kasus: 0,
       sembuh: 0,
@@ -155,7 +136,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 20,
       kota: "Sulawesi Tengah",
       kasus: 0,
       sembuh: 0,
@@ -163,7 +143,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 21,
       kota: "Kalimantan Tengah",
       kasus: 0,
       sembuh: 0,
@@ -171,7 +150,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 22,
       kota: "Sulawesi Utara",
       kasus: 0,
       sembuh: 0,
@@ -179,7 +157,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 23,
       kota: "Papua",
       kasus: 0,
       sembuh: 0,
@@ -187,7 +164,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 24,
       kota: "Kalimantan Utara",
       kasus: 0,
       sembuh: 0,
@@ -195,7 +171,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 25,
       kota: "Aceh",
       kasus: 0,
       sembuh: 0,
@@ -203,7 +178,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 26,
       kota: "Jambi",
       kasus: 0,
       sembuh: 0,
@@ -211,7 +185,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 27,
       kota: "Nusa Tenggara Barat",
       kasus: 0,
       sembuh: 0,
@@ -219,7 +192,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 28,
       kota: "Papua Barat",
       kasus: 0,
       sembuh: 0,
@@ -227,7 +199,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 29,
       kota: "Bengkulu",
       kasus: 0,
       sembuh: 0,
@@ -235,7 +206,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 30,
       kota: "Sulawesi Tenggara",
       kasus: 0,
       sembuh: 0,
@@ -243,7 +213,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 31,
       kota: "Maluku",
       kasus: 0,
       sembuh: 0,
@@ -251,7 +220,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 32,
       kota: "Sulawesi Barat",
       kasus: 0,
       sembuh: 0,
@@ -259,7 +227,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 33,
       kota: "Maluku Utara",
       kasus: 0,
       sembuh: 0,
@@ -267,7 +234,6 @@ const data = {
       dirawat: 0,
     },
     {
-      id: 34,
       kota: "Gorontalo",
       kasus: 0,
       sembuh: 0,

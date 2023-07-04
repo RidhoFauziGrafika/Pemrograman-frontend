@@ -1,4 +1,6 @@
 import Globals from "../Globals";
+import Heading from "../ui/Heading";
+import Text from "../ui/Text";
 import StyledGlobal from "./Global.style";
 
 function Global(props) {
@@ -7,8 +9,8 @@ function Global(props) {
     <StyledGlobal>
       <section>
         <div className="covid__header">
-          <h2>{props.title}</h2>
-          <p>Data Covid Berdasarkan {props.title}</p>
+          <Heading>{props.title}</Heading>
+          <Text>Data Covid Berdasarkan {props.title}</Text>
         </div>
         <div className="card__container">
           {covid.map((data, i) => {

@@ -25,6 +25,11 @@ const theme = {
       padding: 0.5rem 1rem;
     `,
   },
+
+  borders: {
+    teal: "#06d7a0",
+    primary: "#4361ee",
+  },
 };
 
 export default theme;

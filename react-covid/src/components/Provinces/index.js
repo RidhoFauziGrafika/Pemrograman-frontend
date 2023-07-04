@@ -1,13 +1,15 @@
 import StyledProvinces from "./Provinces.styled";
 import Province from "../Province";
+import Heading from "../ui/Heading";
+import Text from "../ui/Text";
 
 function Provinces(props) {
   const { regions } = props;
   return (
     <StyledProvinces>
       <section>
-        <h2>{props.title}</h2>
-        <p>Data Covid berdasarkan {props.title}</p>
+        <Heading>{props.title}</Heading>
+        <Text>Data Covid berdasarkan {props.title}</Text>
         <div className="table__container">
           <div className="table">
             <table>

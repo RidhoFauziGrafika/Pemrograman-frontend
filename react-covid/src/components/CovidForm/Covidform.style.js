@@ -26,27 +26,10 @@ const StyledCovidForm = styled.div`
     margin-bottom: 1.5rem;
   }
 
-  h2 {
-    font-size: 2.44rem;
-    color: #06d6a0;
-    margin-bottom: 2.5rem;
-    text-align: center;
-  }
-
   label {
     color: #64748b;
     text-align: left;
     display: block;
-  }
-
-  select,
-  input {
-    border: 1px solid #06d6a0;
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border-radius: 5px;
-    margin-bottom: 15px;
   }
 
   /* large screen */
@@ -65,10 +48,6 @@ const StyledCovidForm = styled.div`
 
     .addCovid__left {
       flex-basis: 45%;
-    }
-
-    h2 {
-      text-align: left;
     }
 
     form {

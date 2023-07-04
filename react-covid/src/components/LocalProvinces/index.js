@@ -1,14 +1,16 @@
 import StyledLocalProvinces from "./LocalProvinces.style";
 import LocalProvince from "../LocalProvince";
+import { useSelector } from "react-redux";
+import Heading from "../ui/Heading";
+import Text from "../ui/Text";
 
-function LocalProvinces(props) {
-  const { covid } = props;
-  console.log(covid);
+function LocalProvinces() {
+  const covid = useSelector((store) => store.covid.covid);
   return (
     <StyledLocalProvinces>
       <section>
-        <h2>Provinsi</h2>
-        <p>Data Covid Berdasarkan provinsi</p>
+        <Heading>Provinsi</Heading>
+        <Text>Data Covid Berdasarkan provinsi</Text>
         <div className="table__container">
           <div className="table">
             <table>
@@ -43,4 +45,4 @@ function LocalProvinces(props) {
   );
 }
 
-export default LocalProvinces();
+export default LocalProvinces;

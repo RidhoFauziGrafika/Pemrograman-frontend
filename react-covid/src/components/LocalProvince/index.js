@@ -1,5 +1,5 @@
 function LocalProvince(props) {
-  const { covid } = props;
+  const covid = props;
   return (
     <tbody>
       <tr>
